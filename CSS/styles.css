@@ -10,6 +10,12 @@ html {
   max-width: 1040px;
   margin: 0 auto;
 }
+/* Color Pallete */
+:root {
+  --color-primary: #252525;
+  --color-secondary: rgba(231, 226, 226, 0.7);
+  --color-accent: #32cd32;
+}
 
 /* Typography */
 body {
@@ -22,8 +28,13 @@ body {
   margin: 0;
 }
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 300;
+  margin-top: 0;
 }
 
 h1 {
@@ -34,9 +45,11 @@ h2 {
 }
 h3 {
   font-size: 3.6rem;
+  margin-bottom: 0;
 }
 .small {
   font-size: 1.6rem;
+  margin: 0;
 }
 
 .big-text {
@@ -55,7 +68,7 @@ a {
   text-decoration: none;
 }
 .link-primary {
-  color: #99d930;
+  color: var(--color-accent);
   font-weight: 900;
 }
 .link:active,
@@ -72,8 +85,10 @@ a {
 }
 
 .block-primary {
-  background: #99d930;
+  background: var(--color-primary);
+  color: #fff;
 }
+
 .block-secondary {
-  background: rgba(0, 0, 0, 0.1);
+  background: var(--color-secondary);
 }
