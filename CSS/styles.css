@@ -1,3 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 63%;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
 /* Typography */
 body {
   text-align: center;
@@ -5,7 +18,14 @@ body {
   font-size: 2.1rem;
   font-weight: 300;
   line-height: 1.5;
+  padding: 0;
+  margin: 0;
 }
+h1,
+h2 {
+  font-weight: 300;
+}
+
 h1 {
   font-size: 6rem;
 }
@@ -19,7 +39,41 @@ h3 {
   font-size: 1.6rem;
 }
 
-.container {
-  max-width: 570px;
-  margin: 0 auto;
+.big-text {
+  font-size: 8rem;
+  font-weight: 600;
+  display: block;
+}
+h2 .big-text,
+h3 .big-text {
+  font-size: 6rem;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+.link-primary {
+  color: #99d930;
+  font-weight: 900;
+}
+.link:active,
+.link:hover,
+.link:focus {
+  color: #131313;
+}
+
+/* Blocks */
+
+.block {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.block-primary {
+  background: #99d930;
+}
+.block-secondary {
+  background: rgba(0, 0, 0, 0.1);
 }
