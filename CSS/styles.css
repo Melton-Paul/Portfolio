@@ -1,4 +1,7 @@
-* {
+*,
+*:hover,
+*:active,
+*:focus {
   box-sizing: border-box;
 }
 
@@ -20,6 +23,7 @@ html {
 }
 
 /* Typography */
+
 body {
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -50,18 +54,20 @@ h3 {
   font-size: 3.6rem;
   margin-bottom: 0;
 }
-.small {
+.small-text {
   font-size: 1.6rem;
   margin: 0;
 }
-
 .big-text {
   font-size: 8rem;
   font-weight: 600;
   display: block;
 }
-h2 .big-text,
-h3 .big-text {
+.accent-text {
+  color: var(--color-accent);
+}
+h2 .accent-text,
+h3 .accent-text {
   font-size: 6rem;
 }
 .weight900 {
@@ -98,6 +104,15 @@ a {
 .block-secondary {
   background: var(--color-secondary);
 }
+
+/* Heading */
+
+.heading-border {
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+}
 /* Buttons */
 
 .btn {
@@ -114,7 +129,16 @@ a {
   text-transform: uppercase;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   color: white;
   background: var(--color-primary);
+  border: 3px solid var(--color-accent);
 }
+
+.block-primary .btn-primary:hover {
+  color: var(--color-primary);
+  background: #fff;
+}
+
+/* Block Projects */
