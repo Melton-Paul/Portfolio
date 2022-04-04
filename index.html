@@ -11,6 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
 </head>
 <body>
+        <nav>
+            <div class="navbar">
+                <ul class="nav-list list">
+                    <li class="nav-item"><button id="open-modal" class="btn btn-primary">Contact Me</button></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="overlay">
+            <div id="modal" class="modal container modal-primary">
+                <h2>Contact Details</h2>
+                <a href="#" class="link link-primary">LinkedIn</a>
+                <button id="close-modal" class="btn btn-outline btn-small">Close</button>
+            </div>
+        </div>
         <header class="header block block-primary">
             <div class="container">
                 <h1>Hello, my name is <span class="big-text accent-text">Paul Melton</span></h1>
@@ -37,5 +53,6 @@
                 <a href="#" class="btn btn-primary">see all my articles</a>
             </div>
         </section>
+        <script src="./JS/index.js"></script>
 </body>
 </html>
