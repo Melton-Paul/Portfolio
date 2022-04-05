@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+
 *,
 *:hover,
 *:active,
@@ -144,6 +146,9 @@ a {
   cursor: pointer;
   font-weight: 700;
 }
+.btn-search {
+  cursor: pointer;
+}
 
 .btn-primary {
   color: (var(--color-primary));
@@ -207,4 +212,19 @@ a {
   right: 0;
   background: rgba(231, 226, 226, 0.8);
   transition: all 0.5s ease-in;
+}
+
+/* Input */
+
+.input {
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.input-group .input {
+  outline: none;
+  border: none;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
