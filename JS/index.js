@@ -18,12 +18,3 @@ overlay.addEventListener("click", function(){
     overlay.style.display = "none"
 
 });
-
-// Search
-
-const searchInput = document.getElementById("searchInput");
-console.log(searchInput)
-// searchInput.addEventListener("keyup", function(event){
-//     let search = event.target.value.toLowerCase();
-//     console.log(search);
-// });
