@@ -10,6 +10,9 @@
 html {
   font-size: 63%;
 }
+.img {
+  width: 100%;
+}
 
 .container {
   max-width: 1040px;
@@ -244,4 +247,58 @@ a {
   border: none;
   padding: 1rem;
   font-size: 1.5rem;
+}
+/* Carousel */
+
+.carousel {
+  max-width: 1040px;
+  position: relative;
+}
+.carousel-item {
+  display: none;
+}
+.carousel-item-hidden {
+  display: none;
+}
+.carousel-item-visible {
+  display: block;
+  animation: fadeVisibility 2s;
+}
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+.carousel .carousel-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-actions button {
+  margin: 1rem;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  width: 50px;
+  font-weight: bold;
+  height: 50px;
+}
+.carousel-actions button:hover {
+  opacity: 0.8;
+}
+
+/* Keyframes */
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
