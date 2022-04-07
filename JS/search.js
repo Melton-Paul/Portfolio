@@ -3,20 +3,36 @@
 // Search Function
 
 const searchInput = document.getElementById("searchInput");
+const javascriptGamesBtn = document.getElementById("javascriptGamesBtn");
 
-
-searchInput.addEventListener("keyup", function(event){
-    let search = event.target.value.toLowerCase();
-    let allProjects = document.getElementsByClassName("project")
+javascriptGamesBtn.addEventListener("click", function(){
+    searchInput.value = "Javascript Game";
+    let search = "javascript game";
+    let allProjects = document.getElementsByClassName("project");
     for (let counter = 0; counter < allProjects.length; counter++){
         const currentItem = allProjects[counter].textContent.toLowerCase()
         if (currentItem.includes(search)) {
             allProjects[counter].style.display = "block"
         } else {
             allProjects[counter].style.display = "none"
-        }
-    }
+        };
+    };
 });
+
+searchInput.addEventListener("keyup", listener);
+
+function listener(event) {
+    let search = event.target.value.toLowerCase();
+    let allProjects = document.getElementsByClassName("project");
+    for (let counter = 0; counter < allProjects.length; counter++){
+        const currentItem = allProjects[counter].textContent.toLowerCase();
+        if (currentItem.includes(search)) {
+            allProjects[counter].style.display = "block";
+        } else {
+            allProjects[counter].style.display = "none";
+        };
+    };
+};
 
 // Dice Game
 const turnMessage = document.getElementById("message");
