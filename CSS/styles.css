@@ -364,7 +364,18 @@ button:focus {
 #resetBtn {
   display: none;
 }
-
+#mayhem {
+  display: none;
+  background: var(--color-accent);
+  margin-bottom: 1rem;
+}
+#mayhemDesc {
+  display: none;
+}
+#mayhemDesc h2,
+#mayhemDesc p {
+  font-size: 1.5rem;
+}
 .active-player {
   box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75);
 }

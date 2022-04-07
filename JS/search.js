@@ -26,29 +26,38 @@ const player1Dice = document.getElementById("player1Dice");
 const player2Dice = document.getElementById("player2Dice");
 const rollBtn = document.getElementById("rollBtn");
 const resetBtn = document.getElementById("resetBtn");
+const mayhem = document.getElementById("mayhem")
+const mayhemDesc = document.getElementById("mayhemDesc")
 
 
 let player1 = 0;
 let player2  = 0;
 let player1Turn = true;
 let hasGameFinished = false;
+let playerDice1 = "";
+let playerDice2 = "";
 
 rollBtn.addEventListener("click", function(){
     if (hasGameFinished === false){
         if (player1Turn){
-            let playerDice = randomNum();
-            player1 += playerDice;
-            player1Dice.textContent = playerDice;
+            randomNum1()
+            player1 += playerDice1;
+            player1Dice.textContent = playerDice1;
             player2Dice.classList.remove("active-player");
             player1Dice.classList.add("active-player");
             player1Scoreboard.textContent = player1;
             player1Turn = false;} 
+        else if (playerDice1 === playerDice2 ) {
+                mayhem.style.display = "block"
+                mayhemDesc.style.display = "block"
+                rollBtn.style.display = "none"
+            }
         else {
-            let playerDice = randomNum();
-            player2 += playerDice;
+            randomNum2()
+            player2 += playerDice2;
+            player2Dice.textContent = playerDice2;
             player1Dice.classList.remove("active-player");
             player2Dice.classList.add("active-player");
-            player2Dice.textContent = playerDice;
             player2Scoreboard.textContent = player2;
             player1Turn = true;}
     gameFinished() 
@@ -56,10 +65,28 @@ rollBtn.addEventListener("click", function(){
 });
 resetBtn.addEventListener("click", resetGame);
 
-function randomNum() {
+mayhem.addEventListener("dblclick", function() {
+    let temp;
+    temp = player1;
+    player1 = player2;
+    player2 = temp;
+    player1Scoreboard.textContent = player1
+    player2Scoreboard.textContent = player2
+    mayhem.style.display = "none"
+    mayhemDesc.style.display = "none"
+    rollBtn.style.display = "block"
+    randomNum1()
+    randomNum2()
+})
+
+function randomNum1() {
     let number = Math.floor(Math.random() * 8 ) + 1;
-    return number;
+    playerDice1 = number
 };
+function randomNum2() {
+    let number = Math.floor(Math.random() * 8 ) + 1;
+    playerDice2 = number
+}
 
 
 function gameFinished() {
