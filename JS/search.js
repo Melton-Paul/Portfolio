@@ -1,3 +1,7 @@
+
+
+// Search Function
+
 const searchInput = document.getElementById("searchInput");
 
 
@@ -13,3 +17,10 @@ searchInput.addEventListener("keyup", function(event){
         }
     }
 });
+
+// Dice Game
+let score = {
+    player1: 0,
+    player2: 0
+}
+let player1Turn = true

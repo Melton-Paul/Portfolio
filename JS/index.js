@@ -20,6 +20,7 @@ overlay.addEventListener("click", function(){
 });
 
 // Carousel
+
 const carouselControl = document.getElementById("carouselControl")
 const prevBtn = document.getElementById("carousel-button-prev");
 const nextBtn = document.getElementById("carousel-button-next");
@@ -30,6 +31,7 @@ let slidePosition = 0;
 
 prevBtn.addEventListener("click", movetoPrevSlide);
 nextBtn.addEventListener("click", moveToNextSlide);
+
 carouselControl.addEventListener("click", function(){
     if (carouselControl.classList.contains("fa-pause")){
         carouselControl.classList.remove("fa-pause");
