@@ -96,25 +96,25 @@ mayhem.addEventListener("dblclick", function() {
 })
 
 function randomNum1() {
-    let number = Math.floor(Math.random() * 8 ) + 1;
+    let number = Math.floor(Math.random() * 10 ) + 1;
     playerDice1 = number
 };
 function randomNum2() {
-    let number = Math.floor(Math.random() * 8 ) + 1;
+    let number = Math.floor(Math.random() * 10 ) + 1;
     playerDice2 = number
 }
 
 
 function gameFinished() {
-    if (player1 >= 20 || player2 >= 20){
+    if (player1 >= 50 || player2 >= 50){
         
         hasGameFinished = true;
         resetBtn.style.display = "block";
         rollBtn.style.display = "none";
 
-        if (player1 >= 20){
+        if (player1 >= 50){
          turnMessage.textContent = `Player 1 has Won the Game!`}
-        if (player2 >= 20){
+        if (player2 >= 50){
          turnMessage.textContent = `Player 2 has Won the Game!`}
     };
 };
