@@ -418,7 +418,7 @@ button:focus {
   text-align: center;
   letter-spacing: -0.05em;
 }
-#invoiceInput {
+#unitInput {
   font-family: "Inter";
   font-style: normal;
   font-weight: 800;
