@@ -248,6 +248,15 @@ a {
   padding: 1rem;
   font-size: 1.5rem;
 }
+.input-cancel {
+  cursor: pointer;
+  opacity: 0.7;
+  font-size: 1.5rem;
+}
+.input-cancel:hover,
+.input-cancel:focus {
+  opacity: 1;
+}
 /* Carousel */
 
 .carousel {
@@ -385,6 +394,56 @@ button:focus {
   font-weight: bold;
   font-style: italic;
 }
+
+/* Invoice Creator */
+
+.invoice-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(246.26deg, #585dfe 0%, #fb3796 100%);
+  color: white;
+}
+.headerHeading {
+  margin-top: 4rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 38px;
+  /* identical to box height, or 173% */
+
+  text-align: center;
+  letter-spacing: -0.05em;
+}
+#inputNumber {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 97.5723px;
+  line-height: 24px;
+  /* or 25% */
+
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  color: black;
+  height: 50vh;
+}
+.conversionGroup {
+  letter-spacing: 2px;
+}
+.conversionHeader {
+  text-align: center;
+}
+
 /* Keyframes */
 
 @keyframes fadeVisibility {

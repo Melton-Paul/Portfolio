@@ -1,7 +1,7 @@
 
 
 // Search Function
-
+const searchCancel = document.getElementById("cancelSearch")
 const searchInput = document.getElementById("searchInput");
 const javascriptGamesBtn = document.getElementById("javascriptGamesBtn");
 
@@ -20,6 +20,20 @@ javascriptGamesBtn.addEventListener("click", function(){
 });
 
 searchInput.addEventListener("keyup", listener);
+
+searchCancel.addEventListener("click", function(){
+    searchInput.value = ""
+    let search = "";
+    let allProjects = document.getElementsByClassName("project");
+    for (let counter = 0; counter < allProjects.length; counter++){
+        const currentItem = allProjects[counter].textContent.toLowerCase()
+        if (currentItem.includes(search)) {
+            allProjects[counter].style.display = "block"
+        } else {
+            allProjects[counter].style.display = "none"
+        };
+    };
+})
 
 function listener(event) {
     let search = event.target.value.toLowerCase();
@@ -62,6 +76,7 @@ rollBtn.addEventListener("click", function(){
             player2Dice.classList.remove("active-player");
             player1Dice.classList.add("active-player");
             player1Scoreboard.textContent = player1;
+            turnMessage.textContent = `Player 2 Turn`
             player1Turn = false;} 
         else if (playerDice1 === playerDice2 ) {
                 mayhem.style.display = "block"
@@ -75,6 +90,8 @@ rollBtn.addEventListener("click", function(){
             player1Dice.classList.remove("active-player");
             player2Dice.classList.add("active-player");
             player2Scoreboard.textContent = player2;
+            turnMessage.textContent = `Player 1 Turn`
+
             player1Turn = true;}
     gameFinished() 
     };
