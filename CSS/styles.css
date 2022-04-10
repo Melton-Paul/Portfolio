@@ -404,28 +404,30 @@ button:focus {
   flex-direction: column;
   background: linear-gradient(246.26deg, #585dfe 0%, #fb3796 100%);
   color: white;
+  height: 20vh;
 }
 .headerHeading {
   margin-top: 4rem;
   font-family: "Inter";
   font-style: normal;
   font-weight: 800;
-  font-size: 22px;
+  font-size: 3rem;
   line-height: 38px;
   /* identical to box height, or 173% */
 
   text-align: center;
   letter-spacing: -0.05em;
 }
-#inputNumber {
+#invoiceInput {
   font-family: "Inter";
   font-style: normal;
   font-weight: 800;
-  font-size: 97.5723px;
+  font-size: 6rem;
   line-height: 24px;
-  /* or 25% */
-
+  width: 100%;
   text-align: center;
+  background: rgba(0, 0, 0, 0);
+  border: none;
 }
 
 .content {
