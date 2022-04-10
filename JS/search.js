@@ -48,6 +48,19 @@ function listener(event) {
     };
 };
 
+// function listener(event){
+//     let search = event.target.value.toLowerCase();
+//     let allProjects = document.getElementsByClassName("projects")
+//     const projects = allProjects.map(function(currentProject){
+//         const currentItem = currentProject.textContent.toLowerCase();
+//         if (currentItem.includes(search)){
+//             currentProject.style.display = "block";
+//         } else {
+//             currentProject.style.display = "none";
+//         }
+//     })
+// }
+
 // Dice Game
 const turnMessage = document.getElementById("message");
 const player1Scoreboard = document.getElementById("player1Scoreboard");
