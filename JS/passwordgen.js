@@ -21,7 +21,7 @@ let password4 = document.getElementById("password4")
 
 function password(){
     let password = ""
-    for (let i = 0; i < 6; i++){
+    for (let i = 0; i < passwordInput.value; i++){
         password += randomChar[Math.floor(Math.random() * randomChar.length)]
     }
     return password
