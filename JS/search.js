@@ -34,32 +34,56 @@ searchCancel.addEventListener("click", function(){
         };
     };
 })
-
-function listener(event) {
-    let search = event.target.value.toLowerCase();
-    let allProjects = document.getElementsByClassName("project");
-    for (let counter = 0; counter < allProjects.length; counter++){
-        const currentItem = allProjects[counter].textContent.toLowerCase();
-        if (currentItem.includes(search)) {
-            allProjects[counter].style.display = "block";
-        } else {
-            allProjects[counter].style.display = "none";
-        };
-    };
-};
-
-// function listener(event){
+// Using FOR loop for search
+// function listener(event) {
 //     let search = event.target.value.toLowerCase();
-//     let allProjects = document.getElementsByClassName("projects")
-//     const projects = allProjects.map(function(currentProject){
-//         const currentItem = currentProject.textContent.toLowerCase();
-//         if (currentItem.includes(search)){
-//             currentProject.style.display = "block";
+//     let allProjects = document.getElementsByClassName("project");
+//     for (let counter = 0; counter < allProjects.length; counter++){
+//         const currentItem = allProjects[counter].textContent.toLowerCase();
+//         if (currentItem.includes(search)) {
+//             allProjects[counter].style.display = "block";
 //         } else {
-//             currentProject.style.display = "none";
-//         }
+//             allProjects[counter].style.display = "none";
+//         };
+//     };
+// };
+// Using ForEach Loop for search
+function listener(event) {
+    let search = event.target.value.toLowerCase()
+    let allProjects = [...document.getElementsByClassName("project")]
+    
+    allProjects.forEach(function(project) {
+      const currentItem = project.textContent.toLowerCase()
+      
+      if (currentItem.includes(search)) {
+        project.style.display = "block"
+      } else {
+        project.style.display = "none"
+      }
+    })
+  }
+
+// Using .map for search
+
+// function mapListener(event) {
+//     let search = event.target.value.toLowerCase()
+//     let allProjects = [...document.getElementsByClassName("project")]
+//     const projectsContainer = document.getElementById("projectContainer")
+  
+//     const projectElements = allProjects.map(project => {
+//       const currentItem = project.textContent.toLowerCase()
+      
+//       if (currentItem.includes(search)) {
+//         project.style.display = "block"
+//       } else {
+//         project.style.display = "none"
+//       }
+      
+//       return project
 //     })
-// }
+    
+//     projectsContainer.innerHTML = ''
+//     projectsContainer.append(...projectElements)}
 
 // Dice Game
 const turnMessage = document.getElementById("message");
