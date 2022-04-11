@@ -63,10 +63,21 @@
                 </div>
 
 
+            </div>
+        <div>
+            <h2>Password Generator</h2>
+            <label for="passwordInput">How long do you want the passwords to be?</label>
+            <input type="number" name="passwordInput" oninput="generatePasswords()" id="passwordInput">
+            <button onclick="generatePass()">Generate Passwords</button>
+            <p id="password1">0</p>
+            <p id="password2">0</p>
+            <p id="password3">0</p>
+            <p id="password4">0</p>
         </div>
 
     </section>
     <script src="https://kit.fontawesome.com/c76ad3117d.js" crossorigin="anonymous"></script>
     <script src="./JS/search.js"></script>
+    <script src="/JS/passwordgen.js"></script>
 </body>
 </html>
