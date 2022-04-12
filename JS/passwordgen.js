@@ -1,7 +1,5 @@
 const passwordInput = document.getElementById("passwordInput")
 
-let randomChar = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",1,2,3,4,5,6,7,8,9,0,"!","?"]
-
 let password1 = document.getElementById("password1")
 let password2 = document.getElementById("password2")
 let password3 = document.getElementById("password3")
@@ -24,7 +22,6 @@ let password4 = document.getElementById("password4")
 
 
 
-
 function generatePasswords() {
     password1.textContent = passGenerator()
     password2.textContent = passGenerator()
@@ -34,8 +31,7 @@ function generatePasswords() {
 
 function passGenerator() {
     const ranPossiblities = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",1,2,3,4,5,6,7,8,9,0,"!","?"]
-    return new Array(12).fill(0).map(function(){
+    return new Array(5).fill(0).map(function(){
         return ranPossiblities[Math.floor(Math.random()* ranPossiblities.length)]
     }).join(``)
-
 }
