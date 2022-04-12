@@ -8,73 +8,75 @@
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body>
-    <nav class="navbar">
-            <button id="open-modal" class="btn btn-primary nav-contact">Contact</button>
-            <ul class="nav-list list">
-                <li class="nav-item"><a href="/index.html">Home</a></li>
-                <li class="nav-item"><a href="/unit-convertor.html">Unit Convertor</a></li>
-            </ul>
-    </nav>
-    <header>
+    <nav class="nav__background">
+        <div class="nav collapsible ">
+                <a class="nav-brand" href="/">Melton</a>
+                <svg class="icon icon--white nav__toggle" id="light" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m21.5 24h-19c-1.379 0-2.5-1.122-2.5-2.5v-19c0-1.378 1.121-2.5 2.5-2.5h19c1.379 0 2.5 1.122 2.5 2.5v19c0 1.378-1.121 2.5-2.5 2.5zm-19-23c-.827 0-1.5.673-1.5 1.5v19c0 .827.673 1.5 1.5 1.5h19c.827 0 1.5-.673 1.5-1.5v-19c0-.827-.673-1.5-1.5-1.5z"/></g><g><path d="m16.5 8h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g><g><path d="m16.5 12.5h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g><g><path d="m16.5 17h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g></svg>
+                <ul class="list nav-list collapsible--content">
+                    <li class="nav-item"><a href="/">Home</a></li>
+                    <li class="nav-item"><a id="open-modal" href="#">Hire Me</a></li>
+                    <ul class="list icon-container">
+                        <li class="nav-item"><a href="https://www.linkedin.com/in/paul-melton-999361237/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                        <li class="nav-item"><a href="https://github.com/Melton-Paul" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                    </ul>
+                </ul>
+    </div>
+</nav>
+    <header class="block block-primary">
         <h1>Search through all of my work and projects!</h1>
         <p>This page is constantly updating as I am striving to learn new concepts and implement them.</p>
         <div class="inputgroup">
             <input id="searchInput"  class="input" type="text" placeholder="Search...">
             <p class="input-cancel" id="cancelSearch">Cancel Search</p>
         </div>
-        <button id="javascriptGamesBtn">Javascript Games</button>
-        <button>HTML/CSS/JS ONLY Websites</button>
-        <button>Library Implemented Websites</button>
+        <button class="btn btn--primary btn--small" id="javascriptGamesBtn">Javascript Games</button>
+        <button class="btn btn--primary btn--small">HTML/CSS/JS ONLY Websites</button>
+        <button class="btn btn--primary btn--small">Library Implemented Websites</button>
     </header>
     <section class="block projectContainer">
-        <div class="project">HTML</div>
-        <div class="project">CSS</div>
-        <div class="project">JAVASCRIPT</div>
-        <div class="project">HTML</div>
-        <div class="project">HTML</div>
-    </section>
-    <section class="DiceGame project">
-        <h2>Dice Game</h2>
-        <h3 class="javascript-title">Javascript Game</h3>
-        <div class="container">
-            <h2 id="message">Player 1 Turn</h2>
-            <div class="players">
-                <div id="player1">
-                    <h3>Score: 
-                        <span id="player1Scoreboard">0</span>
-                    </h3>
-                    <div id="player1Dice" class="dice active">-</div>
+        <article class="project">
+            <h2 class="project-title">Dice Game</h2>
+            <h3 class="project-type">Javascript Game</h3>
+            <div class="container">
+                <h2 id="message">Player 1 Turn</h2>
+                <div class="players">
+                    <div id="player1">
+                        <h3>Score: 
+                            <span id="player1Scoreboard">0</span>
+                        </h3>
+                        <div id="player1Dice" class="dice active">-</div>
+                    </div>
+                    <div id="player2">
+                        <h3>Score: 
+                            <span id="player2Scoreboard">0</span>
+                        </h3>
+                        <div id="player2Dice" class="dice">-</div>
+                    </div>
                 </div>
-                <div id="player2">
-                    <h3>Score: 
-                        <span id="player2Scoreboard">0</span>
-                    </h3>
-                    <div id="player2Dice" class="dice">-</div>
+                <div class="dice-btns">
+                    <button class="btn btn--outline" id="rollBtn">Roll Dice 🎲</button>
+                    <button class="btn btn--outline" id="resetBtn">Reset Game 🔁</button>
+                    <button class="btn btn--outline" id="mayhem">Switch Scores 😈</button>
                 </div>
-            </div>
-            <div class="dice-btns">
-                <button id="rollBtn">Roll Dice 🎲</button>
-                <button id="resetBtn">Reset Game 🔁</button>
-                <button id="mayhem">Switch Scores 😈</button>
-            </div>
-                <div id="mayhemDesc">
-                    <h2>MAYHEM MODE ACTIVATED</h2>
-                    <p>since you both rolled the same number, you must switch.</p>
+                    <div id="mayhemDesc">
+                        <h2>MAYHEM MODE ACTIVATED</h2>
+                        <p>since you both rolled the same number, you must switch.</p>
+                    </div>
+    
+    
                 </div>
-
-
-            </div>
-        <div class="project">
-            <h2>Password Generator</h2>
-            <label for="passwordInput">How long do you want the passwords to be?</label>
-            <input type="number" name="passwordInput" id="passwordInput">
-            <button onclick="generatePasswords()">Generate Passwords</button>
-            <p id="password1">0</p>
-            <p id="password2">0</p>
-            <p id="password3">0</p>
-            <p id="password4">0</p>
-        </div>
-
+        </article>       
+        <article class="project">
+                <h2 class="project-title">Password Generator</h2>
+                <h3 class="project-type">Javascript Project</h3>
+                <label for="passwordInput">How long do you want the passwords to be?</label>
+                <input type="number" name="passwordInput" id="passwordInput">
+                <button id="generatePasswords">Generate Passwords</button>
+                <p id="password1">0</p>
+                <p id="password2">0</p>
+                <p id="password3">0</p>
+                <p id="password4">0</p>
+        </article>
     </section>
     <script src="https://kit.fontawesome.com/c76ad3117d.js" crossorigin="anonymous"></script>
     <script src="./JS/search.js"></script>
