@@ -8,13 +8,21 @@
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body>
-        <nav class="navbar">
-            <button id="open-modal" class="btn btn-primary nav-contact">Contact</button>
-                <ul class="nav-list list">
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
+    <nav class="nav__background">
+        <div class="nav collapsible">
+            <img class="nav-brand" src="./images/Melton.png" alt="" width="150px" height="40px">
+            <svg class="icon icon--white nav__toggle" id="light" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m21.5 24h-19c-1.379 0-2.5-1.122-2.5-2.5v-19c0-1.378 1.121-2.5 2.5-2.5h19c1.379 0 2.5 1.122 2.5 2.5v19c0 1.378-1.121 2.5-2.5 2.5zm-19-23c-.827 0-1.5.673-1.5 1.5v19c0 .827.673 1.5 1.5 1.5h19c.827 0 1.5-.673 1.5-1.5v-19c0-.827-.673-1.5-1.5-1.5z"/></g><g><path d="m16.5 8h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g><g><path d="m16.5 12.5h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g><g><path d="m16.5 17h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g></svg>
+            <ul class="list nav-list collapsible--content">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">Projects</a></li>
+                <li class="nav-item"><a href="#">Hire Me</a></li>
+                <ul class="list icon-container">
+                    <li class="nav-item"><a href="https://www.linkedin.com/in/paul-melton-999361237/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                    <li class="nav-item"><a href="https://github.com/Melton-Paul" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
                 </ul>
-        </nav>
+            </ul>
+        </div>
+    </nav>
         <div id="overlay">
             <div id="modal" class="modal container modal-primary">
                 <h2>Contact Details</h2>
@@ -23,9 +31,11 @@
             </div>
         </div>
         <header class="header block block-primary">
-            <div class="container">
-                <h1>Hello, my name is <span class="big-text accent-text">Paul Melton</span></h1>
-                <img src="./images/holderimage.png" alt="Portrait of Paul Melton">
+            <div class="hero">
+                <div class="container">
+                    <h1>Hi, I am <span class="big-text accent-text">Paul Melton</span></h1>
+                    <img src="./images/holderimage.png" alt="Portrait of Paul Melton">
+                </div>
             </div>
         </header>
 
@@ -63,9 +73,9 @@
                 </div>
                 <a href="#" class="btn btn-primary">see all my projects</a>
             </div>
-        </section>
+         </section>
         <script src="./JS/index.js"></script>
-        <script src="https://kit.fontawesome.com/c76ad3117d.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/c76ad3117d.js" crossorigin="anonymous"></script> 
 
 </body>
-</html>
+</html> 

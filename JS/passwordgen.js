@@ -29,9 +29,9 @@ function generatePasswords() {
     password4.textContent = passGenerator()
 }
 
-function passGenerator() {
+function passGenerator(num) {
     const ranPossiblities = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",1,2,3,4,5,6,7,8,9,0,"!","?"]
-    return new Array(5).fill(0).map(function(){
+    return new Array(num).fill(0).map(function(){
         return ranPossiblities[Math.floor(Math.random()* ranPossiblities.length)]
     }).join(``)
 }
