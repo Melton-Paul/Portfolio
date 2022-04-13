@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet Paul Melton!</title>
+    <title>Paul Melton</title>
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body>
@@ -13,26 +13,30 @@
                     <a class="nav-brand" href="/">Melton</a>
                     <svg class="icon icon--white nav__toggle" id="light" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m21.5 24h-19c-1.379 0-2.5-1.122-2.5-2.5v-19c0-1.378 1.121-2.5 2.5-2.5h19c1.379 0 2.5 1.122 2.5 2.5v19c0 1.378-1.121 2.5-2.5 2.5zm-19-23c-.827 0-1.5.673-1.5 1.5v19c0 .827.673 1.5 1.5 1.5h19c.827 0 1.5-.673 1.5-1.5v-19c0-.827-.673-1.5-1.5-1.5z"/></g><g><path d="m16.5 8h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g><g><path d="m16.5 12.5h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g><g><path d="m16.5 17h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g></svg>
                     <ul class="list nav-list collapsible--content">
-                        <li class="nav-item"><a href="/">Home</a></li>
                         <li class="nav-item"><a href="/search.html">Projects</a></li>
-                        <li class="nav-item"><a id="open-modal" href="#">Hire Me</a></li>
-                        <ul class="list icon-container">
-                            <li class="nav-item"><a href="https://www.linkedin.com/in/paul-melton-999361237/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                            <li class="nav-item"><a href="https://github.com/Melton-Paul" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                        <li class="nav-item"><a href="#about">About</a></li>
+                        <li class="nav-item"><a id="open-modal" href="#">Contact</a></li>
+                        <ul class="list nav-item icon-container">
+                            <li><a href="https://www.linkedin.com/in/paul-melton-999361237/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                            <li><a href="https://github.com/Melton-Paul" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
                         </ul>
                     </ul>
         </div>
     </nav>
-        <div id="overlay">
+
+    <div id="overlay">
             <div id="modal" class="modal container modal-primary">
                 <h2>Contact Details</h2>
                 <a href="#" class="link link-primary">LinkedIn</a>
                 <button id="close-modal" class="btn btn--outline btn--small">Close</button>
             </div>
-        </div>
-        <header class="header block block-primary">
+    </div>
+
+    <header class="header block block-primary block--skewed-left">
             <div class="hero container">
-                <img class="hero-img" src="./images/holderimage.png" alt="Portrait of Paul Melton">
+                <div class="hero__img-wrapper">
+                    <img class="hero-img" src="./images/cropped.jpg " alt="Portrait of Paul Melton">
+                </div>
                 <div class="hero__greeting">
                     <h1 class="hero__name">Hi, I'm <br><span class="accent-text">Paul Melton</span></h1>
                     <div class="jobtitle-container">
@@ -41,20 +45,20 @@
                         <p class="jobtitle accent-text">Front-End Developer<span class="black">.</span></p>
                     </div>
                     <p>Building beautiful professional <br> websites and web applications</p>
-                    <button onclick="modalOpen()" class="btn btn--primary">Hire Me</button>
+                    <a href="/search.html" class="btn btn--primary">see my work</a>
                 </div>
             </div>
-        </header>
-
-        <section class="block block-secondary">
-            <div class="container">
-                <h2 class="heading-border accent-text">Why You Should Hire Me</span></h2>
-                <iframe class="video-video" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>                <p>Ultricies morbi urna lectus magna quisque ultricies velit enim nisi mi volutpat amet id id porta auctor at viverra consequat turpis quam enim amet vulputate.</p>
-                <a href="/search.html" class="btn btn--primary">see my work</a>
-            </div>
-        </section>
+    </header>
         
-        <section class="block block-primary">
+    <section class="block block-secondary block--skewed-topright block--skewed-right">
+            <div class="container">
+                <h2 id="about" class="heading-border accent-text">Why You Should <span class="clickable" onclick="modalOpen()">Hire Me</span></h2>
+                <iframe class="video-video" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>                <p>Ultricies morbi urna lectus magna quisque ultricies velit enim nisi mi volutpat amet id id porta auctor at viverra consequat turpis quam enim amet vulputate.</p>
+            </div>
+            <button onclick="modalOpen()" class="btn btn--primary">Hire Me</button>
+    </section>
+        
+    <section class="block block-primary">
             <div class="container">
                 <h2 class="heading-border">My most recent <span class="big-text accent-text">Projects</span></h2>
                 <div class="carousel">
@@ -80,7 +84,7 @@
                 </div>
                 <a href="#" class="btn btn--primary">see all my projects</a>
             </div>
-         </section>
+    </section>
         <script src="./JS/index.js"></script>
         <script src="https://kit.fontawesome.com/c76ad3117d.js" crossorigin="anonymous"></script> 
 

@@ -8,7 +8,11 @@ let password4 = document.getElementById("password4")
 const ranPossiblities = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",1,2,3,4,5,6,7,8,9,0,"!","?"]
 
 
-generatePasswords.addEventListener("click", generatePass)
+generatePasswords.addEventListener("click", function(){
+    if (passwordInput.value < 31 && passwordInput.value > 0){
+        generatePass()
+    }
+})
 
 function password(){
     let password = ""
