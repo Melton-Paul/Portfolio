@@ -703,6 +703,138 @@ button:focus {
 .conversionHeader {
   text-align: center;
 }
+/* Color Generator */
+.pageTitle {
+  text-align: center;
+  font-size: 3rem;
+}
+.colorGenerator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.colorSchemeWrapper {
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  margin: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 550px;
+}
+
+/* Top Portion */
+.topPortion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4rem;
+  width: 100%;
+}
+.topItem {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#colorWheel {
+  height: 4rem;
+}
+
+#colorTheme {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+#generateColors {
+  padding: 1rem;
+  border: none;
+  background-color: #808080;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .topPortion {
+    flex-direction: row;
+    width: 70rem;
+  }
+  .topItem {
+    margin: 0.5rem 2rem;
+  }
+  #colorWheel {
+    width: 9rem;
+  }
+}
+
+.colorFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* Middle Portion */
+
+.colorVisual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 550px;
+  width: 100%;
+}
+.colorLabels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.color {
+  padding: 2.4rem 0;
+  width: 110px;
+  font-size: 1.2rem;
+  margin: 3rem;
+  border-radius: 5%;
+  border: 2px solid silver;
+}
+.colorLabel {
+  background: silver;
+  margin: 3rem 3rem;
+  padding: 1rem 3rem;
+  border-radius: 10%;
+}
+
+/* Bottom Portion */
+
+@media screen and (min-width: 768px) {
+  .color {
+    height: 50rem;
+    border-radius: 2%;
+  }
+  .colorFlex {
+    flex-direction: column;
+  }
+  .colorLabels {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 2.8rem;
+  }
+  .colorVisual {
+    flex-direction: row;
+  }
+  .colorLabel {
+    padding: 0.8rem 2rem;
+  }
+}
 
 /* Keyframes */
 

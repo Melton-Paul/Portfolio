@@ -106,9 +106,33 @@
                 <script src="/JS/unit-convert.js"></script>
             </div>
         </article>
+        <article>
+            <div class="colorGenerator">
+                <h1 class="pageTitle">Color Generator</h1>
+                <div class="topPortion">
+                    <input class="topItem" id="colorWheel"  type="color" value="#F55A5A">
+                    <select  class="topItem" name="colorTheme" id="colorTheme">
+                        <option for="colorTheme" value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-Dark</option>
+                        <option value="monochrome-light">Monochrome-Light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-Complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>
+                    </select>
+                    <button  class="topItem" id="generateColors">Get color scheme</button>
+                </div>
+                <div class="colorFlex">
+                    <div id="colorContainer" class="colorVisual"></div>
+                    <div id="colorLabelsContainer" class="colorLabels"></div>
+                </div>
+            </div>
+        </article>
     </section>
     <script src="https://kit.fontawesome.com/c76ad3117d.js" crossorigin="anonymous"></script>
     <script src="./JS/search.js"></script>
     <script src="/JS/passwordgen.js"></script>
+    <script src="./JS/colorgen.js"></script>
 </body>
 </html>
