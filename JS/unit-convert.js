@@ -1,5 +1,5 @@
 // Invoice Creator
-const unitInput = document.getElementById("unitInput");
+const unitInput = document.getElementById("unitInput")  
 
 unitInput.addEventListener("keyup", function(){
 if(unitInput.value > 0 && unitInput.value < 9999999){
@@ -24,5 +24,5 @@ let inputPounds = input / 2.20462
 const massNumber = document.getElementById("massNumber")
 massNumber.textContent = `${input} kilos =  ${inputKilos.toFixed(3)} pounds |  ${input} pounds =  ${inputPounds.toFixed(3)} kilos `
 }
-});
+})  
 

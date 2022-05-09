@@ -1,7 +1,6 @@
 const genColors = document.getElementById("generateColors")
 const colorContainer = document.getElementById("colorContainer")
 const colorLabels = document.getElementById("colorLabelsContainer")
-const numArray = [0,1,2,3,4]
 let colorArray = []
 
 
@@ -19,8 +18,8 @@ function renderColor() {
 }
 
 function getData(data){
-    colorArray= numArray.map(item => {
-        return data.colors[item].hex.value
+    colorArray= data.colors.map(item => {
+        return item.hex.value
     })
 }
 

@@ -1,61 +1,62 @@
 // Collapsible
-const collapsibles = document.querySelectorAll(".collapsible");
+const collapsibles = document.querySelectorAll(".collapsible") 
 collapsibles.forEach((item) =>
   item.addEventListener("click", function () {
-    this.classList.toggle("collapsible--expanded");
+    this.classList.toggle("collapsible--expanded") 
   })
-);
+) 
 
 
 // Modal 
 
-const openModal = document.getElementById("open-modal");
-const overlay = document.getElementById("overlay");
-const closeModal = document.getElementById("close-modal");
+const openModal = document.getElementById("open-modal") 
+const overlay = document.getElementById("overlay") 
+const closeModal = document.getElementById("close-modal") 
 const modal = document.getElementById("modal")
 
 function modalOpen() {
     overlay.style.display = "block"
 }
+function modalClose(){
+    overlay.style.display = "none"
+}
 
 openModal.addEventListener("click", modalOpen)
 
-closeModal.addEventListener("click", function(){
-    overlay.style.display = "none"
-});
+closeModal.addEventListener("click", modalClose)
 
 
 // Carousel
 
 const carouselControl = document.getElementById("carouselControl")
-const prevBtn = document.getElementById("carousel-button-prev");
-const nextBtn = document.getElementById("carousel-button-next");
-const slides = document.getElementsByClassName("carousel-item");
+const prevBtn = document.getElementById("carousel-button-prev")
+const nextBtn = document.getElementById("carousel-button-next")
+const slides = document.getElementsByClassName("carousel-item")
 const slideIndicator = document.getElementsByClassName("carousel-slide-indicator")
-const totalSlides = slides.length;
-let slidePosition = 0;
+const totalSlides = slides.length
+let slidePosition = 0
 
-prevBtn.addEventListener("click", movetoPrevSlide);
-nextBtn.addEventListener("click", moveToNextSlide);
+prevBtn.addEventListener("click", movetoPrevSlide)
+nextBtn.addEventListener("click", moveToNextSlide)
 
 carouselControl.addEventListener("click", function(){
     if (carouselControl.classList.contains("fa-pause")){
-        carouselControl.classList.remove("fa-pause");
+        carouselControl.classList.remove("fa-pause")
         carouselControl.classList.add("fa-play")
         clearTimeout(timeout)
              
     } else {
-        carouselControl.classList.remove("fa-play");
+        carouselControl.classList.remove("fa-play")
         carouselControl.classList.add("fa-pause")
-        interval();
+        interval()
     }
 })
 
 function interval() {
-    moveToNextSlide();
+    moveToNextSlide()
     timeout = setTimeout(interval, 8500)
-};
-interval();
+}
+interval()
 
 
 
@@ -69,24 +70,24 @@ function hideAllSlides() {
     }
 }
 function moveToNextSlide(){
-    hideAllSlides();
+    hideAllSlides() 
 
     if (slidePosition === totalSlides - 1){
-        slidePosition = 0;
+        slidePosition = 0 
     } else {
-        slidePosition++;
+        slidePosition++ 
     }
-    slides[slidePosition].classList.add("carousel-item-visible");
+    slides[slidePosition].classList.add("carousel-item-visible") 
     slideIndicator[slidePosition].classList.add("active-slide")
 }
 function movetoPrevSlide(){
-    hideAllSlides();
+    hideAllSlides() 
     if (slidePosition === 0){
-        slidePosition = totalSlides - 1 ;
+        slidePosition = totalSlides - 1  
     } else {
-        slidePosition--;
+        slidePosition-- 
     }
-    slides[slidePosition].classList.add("carousel-item-visible");
+    slides[slidePosition].classList.add("carousel-item-visible") 
     slideIndicator[slidePosition].classList.add("active-slide")
 
 }
