@@ -836,6 +836,250 @@ button:focus {
   }
 }
 
+/* Movie Finder */
+.movieFinder {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  width: 700px;
+  max-height: 900px;
+  margin: 0 auto;
+  overflow: auto;
+  position: relative;
+  font-size: 14px;
+  background: #e9eaec;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  background: rgba(0, 0, 0, 0.73);
+  color: white;
+  height: 208px;
+  width: 100%;
+  display: flex;
+}
+.hero-heading {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.hero-title {
+  font-weight: 800;
+  font-size: 38px;
+  margin-bottom: 0.7rem;
+}
+.hero-img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 21%;
+}
+
+.hero-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+.hero-link__margin {
+  margin-top: 0.9rem;
+  margin-right: 1.2rem;
+}
+.hero-link:hover {
+  opacity: 0.8;
+}
+@media screen and (min-width: 741px) {
+  .hero-heading {
+    flex-direction: row;
+    left: 10px;
+    top: 30px;
+  }
+  .hero-title {
+    margin: 2rem;
+    font-size: 4rem;
+  }
+  .hero-link {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1230px) {
+  .hero-heading {
+    position: relative;
+    width: 1120px;
+    margin: 0 auto;
+  }
+}
+
+/* Input Group */
+#searchBar {
+  border: none;
+}
+.MF-input-group {
+  border: 1px solid #d1d5db;
+  width: 300px;
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.MF-input-group input {
+  flex-grow: 1;
+  height: 100%;
+  padding: 0 0.5rem;
+  outline: none;
+  color: #6b7280;
+  margin: 0 8px;
+}
+.MF-input-group .fa-search {
+  color: black;
+  opacity: 0.6;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.MF-input-group .MF-btn {
+  height: 100%;
+  width: 128px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+@media screen and (min-width: 440px) {
+  .MF-input-group {
+    width: 435px;
+  }
+}
+
+/* Content Body */
+.content-body {
+  position: relative;
+  height: 100vh;
+  margin-left: -12rem;
+  margin-top: 4rem;
+}
+#noData {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 20%;
+  left: 58%;
+  transform: translateX(-50%);
+  opacity: 0.2;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+#noData .fa-film {
+  display: block;
+}
+#noData p {
+  margin: 0;
+}
+#noData a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loading {
+  width: 200px;
+}
+
+/* Movie Block */
+.movie-container {
+  display: flex;
+  justify-content: row;
+  border-bottom: 1px solid #6b7280;
+  margin: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.movie-header {
+  display: flex;
+  align-items: center;
+}
+.movie-header .fa-star {
+  margin: 0 0.3rem 0 0.6rem;
+  margin-top: 0.8rem;
+  color: gold;
+}
+.movie-content {
+  margin-left: 1rem;
+}
+.movie-tags {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.movie-tag {
+  margin-right: 0.2rem;
+}
+.movie-desc {
+  color: #6b7280;
+}
+
+.movie-img {
+  width: 100px;
+  height: 170px;
+}
+.watchlist-add {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.watchlist-add .fa-plus {
+  margin-top: 0.8rem;
+}
+.watchlist-add p {
+  margin-left: 0.5rem;
+}
+.watchlist-add:hover {
+  color: gold;
+}
+@media screen and (min-width: 800px) {
+  .movie-tags {
+    width: 463px;
+  }
+}
+
+/* Utility Classes */
+
+.clear__bottom {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1040px) {
+  .container {
+    max-width: 1040px;
+  }
+}
+
 /* Keyframes */
 
 @keyframes fadeVisibility {

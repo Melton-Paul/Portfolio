@@ -108,7 +108,7 @@
         </article>
         <article>
             <div class="colorGenerator">
-                <h1 class="pageTitle">Color Generator</h1>
+                <h2 class="pageTitle">Color Generator</h2>
                 <div class="topPortion">
                     <input class="topItem" id="colorWheel"  type="color" value="#F55A5A">
                     <select  class="topItem" name="colorTheme" id="colorTheme">
@@ -129,8 +129,37 @@
                 </div>
             </div>
         </article>
+
+        <article >
+            <h2 class="pageTitle">Movie Finder</h2>
+            <div class="movieFinder">
+                <section class="hero">
+                    <div class="container">
+                        <img class="hero-img" src="./images/andre-tan-THJJRUhNlEc-unsplash.jpg">
+                        <div class="hero-heading">
+                            <h1 class="hero-title">Find your film</h1>
+                            <a class="hero-link" href="/watchlist.html">My Watchlist</a>
+                        </div>
+                        <div class="hero-img"></div>
+                        <div class="MF-input-group">
+                            <i class="fa fa-search"></i>
+                            <input type="text" id="searchBar" placeholder="What are you looking for?" autofocus>
+                            <button class="MF-btn" type="submit" id="searchBtn">Search</button>
+                        </div>
+                    </div>
+                </section>
+                <section id="movieContainer" class="content-body">
+                    <div id="noData">
+                        <i class="fa fa-film fa-6x"></i>
+                        <p>Start Exploring</p>
+                    </div>
+                </section>
+
+            </div>
+        </article>
     </section>
     <script src="https://kit.fontawesome.com/c76ad3117d.js" crossorigin="anonymous"></script>
+    <script src="./JS/moviefinder.js"></script>
     <script src="./JS/search.js"></script>
     <script src="/JS/passwordgen.js"></script>
     <script src="./JS/colorgen.js"></script>
