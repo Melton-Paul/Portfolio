@@ -1,95 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paul Melton</title>
-    <link rel="stylesheet" href="./CSS/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
+  <body>
     <nav class="nav__background">
-            <div class="nav collapsible ">
-                    <a class="nav-brand" href="/">Melton</a>
-                    <svg class="icon icon--white nav__toggle" id="light" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m21.5 24h-19c-1.379 0-2.5-1.122-2.5-2.5v-19c0-1.378 1.121-2.5 2.5-2.5h19c1.379 0 2.5 1.122 2.5 2.5v19c0 1.378-1.121 2.5-2.5 2.5zm-19-23c-.827 0-1.5.673-1.5 1.5v19c0 .827.673 1.5 1.5 1.5h19c.827 0 1.5-.673 1.5-1.5v-19c0-.827-.673-1.5-1.5-1.5z"/></g><g><path d="m16.5 8h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g><g><path d="m16.5 12.5h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g><g><path d="m16.5 17h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g></svg>
-                    <ul class="list nav-list collapsible--content">
-                        <li class="nav-item"><a href="/search.html">Projects</a></li>
-                        <li class="nav-item"><a href="#about">About</a></li>
-                        <li class="nav-item"><a id="open-modal" href="#">Contact</a></li>
-                        <ul class="list nav-item icon-container">
-                            <li><a href="https://www.linkedin.com/in/paul-melton-999361237/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                            <li><a href="https://github.com/Melton-Paul" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-                        </ul>
-                    </ul>
-        </div>
+      <div class="nav collapsible">
+        <a class="nav-brand" href="/">Melton</a>
+        <svg
+          class="icon icon--white nav__toggle"
+          id="light"
+          enable-background="new 0 0 24 24"
+          height="512"
+          viewBox="0 0 24 24"
+          width="512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+            <path
+              d="m21.5 24h-19c-1.379 0-2.5-1.122-2.5-2.5v-19c0-1.378 1.121-2.5 2.5-2.5h19c1.379 0 2.5 1.122 2.5 2.5v19c0 1.378-1.121 2.5-2.5 2.5zm-19-23c-.827 0-1.5.673-1.5 1.5v19c0 .827.673 1.5 1.5 1.5h19c.827 0 1.5-.673 1.5-1.5v-19c0-.827-.673-1.5-1.5-1.5z"
+            />
+          </g>
+          <g>
+            <path
+              d="m16.5 8h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"
+            />
+          </g>
+          <g>
+            <path
+              d="m16.5 12.5h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"
+            />
+          </g>
+          <g>
+            <path
+              d="m16.5 17h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"
+            />
+          </g>
+        </svg>
+        <ul class="list nav-list collapsible--content">
+          <li class="nav-item"><a href="/search.html">Projects</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a id="open-modal" href="#">Contact</a></li>
+          <ul class="list nav-item icon-container">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/paul-melton-999361237/"
+                target="_blank"
+                ><i class="fa fa-linkedin fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/Melton-Paul" target="_blank"
+                ><i class="fa fa-github fa-2x"></i
+              ></a>
+            </li>
+          </ul>
+        </ul>
+      </div>
     </nav>
 
     <div id="overlay">
-            <div id="modal" class="modal container modal-primary">
-                <h2>Contact Details</h2>
-                <a href="#" class="link link-primary">LinkedIn</a>
-                <button id="close-modal" class="btn btn--outline btn--small">Close</button>
-            </div>
+      <div id="modal" class="modal container modal-primary">
+        <h2>Contact Details</h2>
+        <a href="#" class="link link-primary">LinkedIn</a>
+        <button id="close-modal" class="btn btn--outline btn--small">
+          Close
+        </button>
+      </div>
     </div>
 
     <header class="header block block-primary block--skewed-left">
-            <div class="hero container">
-                <div class="hero__img-wrapper">
-                    <img class="hero-img" src="./images/cropped.jpg " alt="Portrait of Paul Melton">
-                </div>
-                <div class="hero__greeting">
-                    <h1 class="hero__name">Hi, I'm <br><span class="accent-text">Paul Melton</span></h1>
-                    <div class="jobtitle-container">
-                        <p class="jobtitle">Designer,</p>
-                        <p class="jobtitle">Software Engineer,</p>
-                        <p class="jobtitle accent-text">Front-End Developer<span class="black">.</span></p>
-                    </div>
-                    <p>Building beautiful professional <br> websites and web applications</p>
-                    <a href="/search.html" class="btn btn--primary">see my work</a>
-                </div>
-            </div>
+      <div class="hero container">
+        <div class="hero__img-wrapper">
+          <img
+            class="hero-img"
+            src="./images/cropped.jpg "
+            alt="Portrait of Paul Melton"
+          />
+        </div>
+        <div class="hero__greeting">
+          <h1 class="hero__name">
+            Hi, I'm <br /><span class="accent-text">Paul Melton</span>
+          </h1>
+          <div class="jobtitle-container">
+            <p class="jobtitle">Designer,</p>
+            <p class="jobtitle">Software Engineer,</p>
+            <p class="jobtitle accent-text">
+              Front-End Developer<span class="black">.</span>
+            </p>
+          </div>
+          <p>
+            Building beautiful professional <br />
+            websites and web applications
+          </p>
+          <a href="/search.html" class="btn btn--primary">see my work</a>
+        </div>
+      </div>
     </header>
-        
-    <section class="block block-secondary block--skewed-topright block--skewed-right">
-            <div class="container">
-                <h2 id="about" class="heading-border accent-text">What <span class="clickable" onclick="modalOpen()">I Know</span></h2>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>Javascript</p>
-                    <p>React</p>
-            </div>
-            <button onclick="modalOpen()" class="btn btn--primary">Hire Me</button>
+
+    <section
+      class="block block-secondary block--skewed-topright block--skewed-right"
+    >
+      <div class="container">
+        <h2 id="about" class="heading-border accent-text">
+          What <span class="clickable" onclick="modalOpen()">I Know</span>
+        </h2>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>Javascript</p>
+        <p>React</p>
+      </div>
+      <button onclick="modalOpen()" class="btn btn--primary">Hire Me</button>
     </section>
-        
+
     <section class="block block-primary">
-            <div class="container">
-                <h2 class="heading-border">My most recent <span class="big-text accent-text">Projects</span></h2>
-                <div class="carousel">
-                    <div class="carousel-item carousel-item-visible">
-                        <img class="img" src="./images/1.png" alt="Screenshot of example website made for DobbyLettuce">
-                    </div>
+      <div class="container">
+        <h2 class="heading-border">
+          My most recent <span class="big-text accent-text">Projects</span>
+        </h2>
+        <div class="carousel">
+          <div class="carousel-item carousel-item-visible">
+            <img
+              class="img"
+              src="./images/1.png"
+              alt="Screenshot of example website made for DobbyLettuce"
+            />
+          </div>
 
-                    <div class="carousel-item">
-                        <img class="img" src="./images/2.png" alt="Screenshot of example website made for Moshified">
-                    </div>
+          <div class="carousel-item">
+            <img
+              class="img"
+              src="./images/2.png"
+              alt="Screenshot of example website made for Moshified"
+            />
+          </div>
 
-                    <div class="carousel-actions">
-                        <button id="carousel-button-prev" aria-label="Previous slide">&lt;</button>
-                        <button id="carousel-button-next" aria-label="Next slide">&gt;</button>
-                    </div>
-                    <div class="carousel-pause-play">
-                        <i id="carouselControl" class="fa fa-pause"></i>
-                    </div>
-                    <div class="carousel-indicators">
-                        <div class="carousel-slide-indicator active-slide"></div>
-                        <div class="carousel-slide-indicator"></div>
-                    </div>
-                </div>
-                <a href="#" class="btn btn--primary">see all my projects</a>
-            </div>
+          <div class="carousel-actions">
+            <button id="carousel-button-prev" aria-label="Previous slide">
+              &lt;
+            </button>
+            <button id="carousel-button-next" aria-label="Next slide">
+              &gt;
+            </button>
+          </div>
+          <div class="carousel-pause-play">
+            <i id="carouselControl" class="fa fa-pause"></i>
+          </div>
+          <div class="carousel-indicators">
+            <div class="carousel-slide-indicator active-slide"></div>
+            <div class="carousel-slide-indicator"></div>
+          </div>
+        </div>
+        <a href="#" class="btn btn--primary">see all my projects</a>
+      </div>
     </section>
-        <script src="./JS/index.js"></script>
-        <script src="https://kit.fontawesome.com/c76ad3117d.js" crossorigin="anonymous"></script> 
-
-</body>
-</html> 
+    <script src="./JS/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c76ad3117d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

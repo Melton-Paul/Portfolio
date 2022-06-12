@@ -1,167 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search through Paul's Work</title>
-    <link rel="stylesheet" href="./CSS/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
+  <body>
     <nav class="nav__background">
-        <div class="nav collapsible ">
-                <a class="nav-brand" href="/">Melton</a>
-                <svg class="icon icon--white nav__toggle" id="light" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m21.5 24h-19c-1.379 0-2.5-1.122-2.5-2.5v-19c0-1.378 1.121-2.5 2.5-2.5h19c1.379 0 2.5 1.122 2.5 2.5v19c0 1.378-1.121 2.5-2.5 2.5zm-19-23c-.827 0-1.5.673-1.5 1.5v19c0 .827.673 1.5 1.5 1.5h19c.827 0 1.5-.673 1.5-1.5v-19c0-.827-.673-1.5-1.5-1.5z"/></g><g><path d="m16.5 8h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g><g><path d="m16.5 12.5h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g><g><path d="m16.5 17h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g></svg>
-                <ul class="list nav-list collapsible--content">
-                    <li class="nav-item"><a href="/">Home</a></li>
-                    <li class="nav-item"><a id="open-modal" href="#">Hire Me</a></li>
-                    <ul class="list icon-container">
-                        <li class="nav-item"><a href="https://www.linkedin.com/in/paul-melton-999361237/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                        <li class="nav-item"><a href="https://github.com/Melton-Paul" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-                    </ul>
-                </ul>
-    </div>
-</nav>
+      <div class="nav collapsible">
+        <a class="nav-brand" href="/">Melton</a>
+        <svg
+          class="icon icon--white nav__toggle"
+          id="light"
+          enable-background="new 0 0 24 24"
+          height="512"
+          viewBox="0 0 24 24"
+          width="512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+            <path
+              d="m21.5 24h-19c-1.379 0-2.5-1.122-2.5-2.5v-19c0-1.378 1.121-2.5 2.5-2.5h19c1.379 0 2.5 1.122 2.5 2.5v19c0 1.378-1.121 2.5-2.5 2.5zm-19-23c-.827 0-1.5.673-1.5 1.5v19c0 .827.673 1.5 1.5 1.5h19c.827 0 1.5-.673 1.5-1.5v-19c0-.827-.673-1.5-1.5-1.5z"
+            />
+          </g>
+          <g>
+            <path
+              d="m16.5 8h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"
+            />
+          </g>
+          <g>
+            <path
+              d="m16.5 12.5h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"
+            />
+          </g>
+          <g>
+            <path
+              d="m16.5 17h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"
+            />
+          </g>
+        </svg>
+        <ul class="list nav-list collapsible--content">
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a id="open-modal" href="#">Hire Me</a></li>
+          <ul class="list icon-container">
+            <li class="nav-item">
+              <a
+                href="https://www.linkedin.com/in/paul-melton-999361237/"
+                target="_blank"
+                ><i class="fa fa-linkedin fa-2x"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://github.com/Melton-Paul" target="_blank"
+                ><i class="fa fa-github fa-2x"></i
+              ></a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </nav>
     <header class="block block-primary">
-        <h1>Search through all of my work and projects!</h1>
-        <p>This page is constantly updating as I am striving to learn new concepts and implement them.</p>
-        <div class="inputgroup">
-            <input id="searchInput"  class="input" type="text" placeholder="Search...">
-            <p class="input-cancel" id="cancelSearch">Cancel Search</p>
-        </div>
-        <button class="btn btn--primary btn--small" id="javascriptGamesBtn">Javascript Games</button>
-        <button class="btn btn--primary btn--small">HTML/CSS/JS ONLY Websites</button>
-        <button class="btn btn--primary btn--small">Library Implemented Websites</button>
+      <h1>Search through all of my work and projects!</h1>
+      <p>
+        This page is constantly updating as I am striving to learn new concepts
+        and implement them.
+      </p>
+      <div class="inputgroup">
+        <input
+          id="searchInput"
+          class="input"
+          type="text"
+          placeholder="Search..."
+        />
+        <p class="input-cancel" id="cancelSearch">Cancel Search</p>
+      </div>
+      <button class="btn btn--primary btn--small" id="javascriptGamesBtn">
+        Javascript Games
+      </button>
+      <button class="btn btn--primary btn--small">
+        HTML/CSS/JS ONLY Websites
+      </button>
+      <button class="btn btn--primary btn--small">
+        Library Implemented Websites
+      </button>
     </header>
     <section class="block projectContainer">
-        <article class="project">
-            <h2 class="project-title">Dice Game</h2>
-            <h3 class="project-type">Javascript Game</h3>
+      <article class="project">
+        <h2 class="project-title">Dice Game</h2>
+        <h3 class="project-type">Javascript Game</h3>
+        <div class="container">
+          <h2 id="message">Player 1 Turn</h2>
+          <div class="players">
+            <div id="player1">
+              <h3>
+                Score:
+                <span id="player1Scoreboard">0</span>
+              </h3>
+              <div id="player1Dice" class="dice active">-</div>
+            </div>
+            <div id="player2">
+              <h3>
+                Score:
+                <span id="player2Scoreboard">0</span>
+              </h3>
+              <div id="player2Dice" class="dice">-</div>
+            </div>
+          </div>
+          <div class="dice-btns">
+            <button class="btn btn--outline" id="rollBtn">Roll Dice 🎲</button>
+            <button class="btn btn--outline" id="resetBtn">
+              Reset Game 🔁
+            </button>
+            <button class="btn btn--outline" id="mayhem">
+              Switch Scores 😈
+            </button>
+          </div>
+          <div id="mayhemDesc">
+            <h2>MAYHEM MODE ACTIVATED</h2>
+            <p>since you both rolled the same number, you must switch.</p>
+          </div>
+        </div>
+      </article>
+      <article class="project">
+        <h2 class="project-title">Password Generator</h2>
+        <h3 class="project-type">Javascript Project</h3>
+        <label for="passwordInput"
+          >How long do you want the passwords to be? <br />
+          Can't be below 1 or over 30</label
+        ><br />
+        <input
+          type="number"
+          name="passwordInput"
+          id="passwordInput"
+          min="1"
+          max="30"
+        />
+        <button id="generatePasswords">Generate Passwords</button>
+        <p id="password1">0</p>
+        <p id="password2">0</p>
+        <p id="password3">0</p>
+        <p id="password4">0</p>
+      </article>
+      <article class="project">
+        <h2 class="project-title">Unit Convertor</h2>
+        <h3 class="project-type">Javascript Project</h3>
+        <div class="invoice-header">
+          <h1 class="headerHeading">Metric/Imperial unit conversion</h1>
+          <input
+            type="number"
+            id="unitInput"
+            placeholder="Enter your value"
+            min="1"
+            max="9999999"
+          />
+        </div>
+        <div class="content">
+          <div class="conversionGroup">
+            <h2 class="conversionHeader">Length (Meter/Feet)</h2>
+            <div class="conversionNumbers">
+              <p id="lengthNumber">
+                0 meters = 0.000 feet | 0 feet = 0.000 meters
+              </p>
+            </div>
+          </div>
+          <div class="conversionGroup">
+            <h2 class="conversionHeader">Volume (Liters/Gallons)</h2>
+            <div class="conversionNumbers">
+              <p id="volumeNumber">
+                0 liters = 0.000 gallons | 0 gallons = 0.000 liters
+              </p>
+            </div>
+          </div>
+          <div class="conversionGroup">
+            <h2 class="conversionHeader">Mass (Kilograms/Pounds)</h2>
+            <div class="conversionNumbers">
+              <p id="massNumber">
+                0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos
+              </p>
+            </div>
+          </div>
+          <script src="/JS/unit-convert.js"></script>
+        </div>
+      </article>
+      <article>
+        <div class="colorGenerator">
+          <h2 class="pageTitle">Color Generator</h2>
+          <div class="topPortion">
+            <input
+              class="topItem"
+              id="colorWheel"
+              type="color"
+              value="#F55A5A"
+            />
+            <select class="topItem" name="colorTheme" id="colorTheme">
+              <option for="colorTheme" value="monochrome">Monochrome</option>
+              <option value="monochrome-dark">Monochrome-Dark</option>
+              <option value="monochrome-light">Monochrome-Light</option>
+              <option value="analogic">Analogic</option>
+              <option value="complement">Complement</option>
+              <option value="analogic-complement">Analogic-Complement</option>
+              <option value="triad">Triad</option>
+              <option value="quad">Quad</option>
+            </select>
+            <button class="topItem" id="generateColors">
+              Get color scheme
+            </button>
+          </div>
+          <div class="colorFlex">
+            <div id="colorContainer" class="colorVisual"></div>
+            <div id="colorLabelsContainer" class="colorLabels"></div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h2 class="pageTitle">Movie Finder</h2>
+        <div class="movieFinder">
+          <section class="hero">
             <div class="container">
-                <h2 id="message">Player 1 Turn</h2>
-                <div class="players">
-                    <div id="player1">
-                        <h3>Score: 
-                            <span id="player1Scoreboard">0</span>
-                        </h3>
-                        <div id="player1Dice" class="dice active">-</div>
-                    </div>
-                    <div id="player2">
-                        <h3>Score: 
-                            <span id="player2Scoreboard">0</span>
-                        </h3>
-                        <div id="player2Dice" class="dice">-</div>
-                    </div>
-                </div>
-                <div class="dice-btns">
-                    <button class="btn btn--outline" id="rollBtn">Roll Dice 🎲</button>
-                    <button class="btn btn--outline" id="resetBtn">Reset Game 🔁</button>
-                    <button class="btn btn--outline" id="mayhem">Switch Scores 😈</button>
-                </div>
-                    <div id="mayhemDesc">
-                        <h2>MAYHEM MODE ACTIVATED</h2>
-                        <p>since you both rolled the same number, you must switch.</p>
-                    </div>
-    
-    
-                </div>
-        </article>       
-        <article class="project">
-                <h2 class="project-title">Password Generator</h2>
-                <h3 class="project-type">Javascript Project</h3>
-                <label for="passwordInput">How long do you want the passwords to be? <br> Can't be below 1 or over 30</label><br>
-                <input type="number" name="passwordInput" id="passwordInput" min="1" max="30" >
-                <button id="generatePasswords">Generate Passwords</button>
-                <p id="password1">0</p>
-                <p id="password2">0</p>
-                <p id="password3">0</p>
-                <p id="password4">0</p>
-        </article>
-        <article class="project">
-            <h2 class="project-title">Unit Convertor</h2>
-            <h3 class="project-type">Javascript Project</h3>
-            <div class="invoice-header">
-                <h1 class="headerHeading">Metric/Imperial unit conversion</h1>
-                <input type="number" id="unitInput" placeholder="Enter your value" min="1" max="9999999">
+              <img
+                class="hero-img"
+                src="./images/andre-tan-THJJRUhNlEc-unsplash.jpg"
+              />
+              <div class="hero-heading">
+                <h1 class="hero-title">Find your film</h1>
+                <a class="hero-link" href="/watchlist.html">My Watchlist</a>
+              </div>
+              <div class="hero-img"></div>
+              <div class="MF-input-group">
+                <i class="fa fa-search"></i>
+                <input
+                  type="text"
+                  id="searchBar"
+                  placeholder="What are you looking for?"
+                  autofocus
+                />
+                <button class="MF-btn" type="submit" id="searchBtn">
+                  Search
+                </button>
+              </div>
             </div>
-            <div class="content">
-                <div class="conversionGroup">
-                    <h2 class="conversionHeader">Length (Meter/Feet)</h2>
-                    <div class="conversionNumbers">
-                        <p id="lengthNumber">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
-                    </div>
-                </div>
-                <div class="conversionGroup">
-                    <h2 class="conversionHeader">Volume (Liters/Gallons)</h2>
-                    <div class="conversionNumbers">
-                        <p id="volumeNumber">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
-                    </div>
-                </div>
-                <div class="conversionGroup">
-                    <h2 class="conversionHeader">Mass (Kilograms/Pounds)</h2>
-                    <div class="conversionNumbers">
-                        <p id="massNumber">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
-                    </div>
-                </div>
-                <script src="/JS/unit-convert.js"></script>
+          </section>
+          <section id="movieContainer" class="content-body">
+            <div id="noData">
+              <i class="fa fa-film fa-6x"></i>
+              <p>Start Exploring</p>
             </div>
-        </article>
-        <article>
-            <div class="colorGenerator">
-                <h2 class="pageTitle">Color Generator</h2>
-                <div class="topPortion">
-                    <input class="topItem" id="colorWheel"  type="color" value="#F55A5A">
-                    <select  class="topItem" name="colorTheme" id="colorTheme">
-                        <option for="colorTheme" value="monochrome">Monochrome</option>
-                        <option value="monochrome-dark">Monochrome-Dark</option>
-                        <option value="monochrome-light">Monochrome-Light</option>
-                        <option value="analogic">Analogic</option>
-                        <option value="complement">Complement</option>
-                        <option value="analogic-complement">Analogic-Complement</option>
-                        <option value="triad">Triad</option>
-                        <option value="quad">Quad</option>
-                    </select>
-                    <button  class="topItem" id="generateColors">Get color scheme</button>
-                </div>
-                <div class="colorFlex">
-                    <div id="colorContainer" class="colorVisual"></div>
-                    <div id="colorLabelsContainer" class="colorLabels"></div>
-                </div>
-            </div>
-        </article>
-
-        <article >
-            <h2 class="pageTitle">Movie Finder</h2>
-            <div class="movieFinder">
-                <section class="hero">
-                    <div class="container">
-                        <img class="hero-img" src="./images/andre-tan-THJJRUhNlEc-unsplash.jpg">
-                        <div class="hero-heading">
-                            <h1 class="hero-title">Find your film</h1>
-                            <a class="hero-link" href="/watchlist.html">My Watchlist</a>
-                        </div>
-                        <div class="hero-img"></div>
-                        <div class="MF-input-group">
-                            <i class="fa fa-search"></i>
-                            <input type="text" id="searchBar" placeholder="What are you looking for?" autofocus>
-                            <button class="MF-btn" type="submit" id="searchBtn">Search</button>
-                        </div>
-                    </div>
-                </section>
-                <section id="movieContainer" class="content-body">
-                    <div id="noData">
-                        <i class="fa fa-film fa-6x"></i>
-                        <p>Start Exploring</p>
-                    </div>
-                </section>
-
-            </div>
-        </article>
+          </section>
+        </div>
+      </article>
     </section>
-    <script src="https://kit.fontawesome.com/c76ad3117d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c76ad3117d.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./JS/moviefinder.js"></script>
     <script src="./JS/search.js"></script>
     <script src="/JS/passwordgen.js"></script>
     <script src="./JS/colorgen.js"></script>
-</body>
+  </body>
 </html>
